@@ -5,7 +5,7 @@
 
 /* ---------- Tokens ---------- */
 :root {
-  --charcoal: #1A1714;   /* primary ground */
+  --charcoal: #161310;   /* primary ground — deepened for mood, still warmed near-black, never pure #000 */
   --rosegold: #BE8E71;   /* signature accent — only CTA color. Calibrated to the label foil (sampled #BF9274/#A87858 from the logo + lineup labels); the live site's pink #B76E79 conflicted with the bottles. */
   --rosewood: #8A5F44;   /* hover/active, Extra Añejo tier — dark companion of the label copper */
   --bone:     #EFE6DF;   /* light surfaces, type on dark */
@@ -13,7 +13,7 @@
   --amber:    #C4883A;   /* Reposado tier + award badges ONLY */
   --smoke:    #6E675F;   /* Mezcal tier — smoke gray derived from charcoal */
 
-  --charcoal-2: #241F1B; /* raised dark surface */
+  --charcoal-2: #211C17; /* raised dark surface */
   --bone-2:     #E6DAD1; /* recessed light surface */
   --ink-soft:   rgba(26, 23, 20, 0.72);   /* secondary text on bone */
   --bone-soft:  rgba(239, 230, 223, 0.72);/* secondary text on charcoal */
@@ -46,8 +46,8 @@ body {
   font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.6;
-  color: var(--charcoal);
-  background: var(--bone);
+  color: var(--bone);
+  background: var(--charcoal);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -68,8 +68,8 @@ h4 { font-size: 1.1rem; }
 p { margin: 0 0 1em; max-width: var(--measure); }
 ul, ol { padding-left: 1.2em; }
 
-a { color: var(--rosewood); text-decoration-thickness: 1px; text-underline-offset: 3px; }
-a:hover { color: var(--rosegold); }
+a { color: var(--rosegold); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--bone); }
 
 :focus-visible {
   outline: 2px solid var(--rosegold);
@@ -144,9 +144,9 @@ a:hover { color: var(--rosegold); }
 }
 /* Volcanic stone on charcoal: coarse multi-octave mottle rendered as warm-light grain */
 .tex-stone::before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='s'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.09' numOctaves='4' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.94 0 0 0 0 0.90 0 0 0 0 0.86 0 0 2.0 0 -0.5'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23s)'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='s'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.14' numOctaves='4' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.94 0 0 0 0 0.90 0 0 0 0 0.86 0 0 1.6 0 -0.45'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23s)'/%3E%3C/svg%3E");
   background-size: 220px 220px;
-  opacity: 0.06;
+  opacity: 0.045;
 }
 /* Handmade cotton paper on bone: fine fibrous speckle rendered as charcoal grain */
 .tex-paper::before {
@@ -173,6 +173,14 @@ a:hover { color: var(--rosegold); }
   background: var(--charcoal);
   color: var(--bone);
 }
+.on-dark.raised { background: var(--charcoal-2); }
+.on-light {
+  background: var(--bone);
+  color: var(--charcoal);
+}
+.on-light p { color: var(--ink-soft); }
+.on-light a { color: var(--rosewood); }
+.on-light a:hover { color: var(--rosegold); }
 .on-dark p { color: var(--bone-soft); }
 .on-dark h1, .on-dark h2, .on-dark h3, .on-dark h4 { color: var(--bone); }
 .on-dark a { color: var(--rosegold); }
@@ -408,9 +416,9 @@ img.emblem { width: 34px; height: auto; display: block; }
 
 .card {
   --tier: var(--rosegold);
-  background: var(--bone);
-  color: var(--charcoal);
-  border: 1px solid rgba(26, 23, 20, 0.12);
+  background: var(--charcoal-2);
+  color: var(--bone);
+  border: 1px solid rgba(239, 230, 223, 0.1);
   border-top: 3px solid var(--tier);
   border-radius: var(--radius);
   padding: 1.5rem;
@@ -418,7 +426,7 @@ img.emblem { width: 34px; height: auto; display: block; }
   flex-direction: column;
   gap: 0.65rem;
 }
-.card p { font-size: 0.95rem; color: var(--ink-soft); }
+.card p { font-size: 0.95rem; color: var(--bone-soft); }
 .card .btn { align-self: flex-start; margin-top: auto; }
 .card h3 a { color: inherit; text-decoration: none; }
 .card h3 a:hover { color: var(--rosewood); }
@@ -542,7 +550,7 @@ blockquote.quote footer {
   font: inherit;
   border: 1px solid rgba(239, 230, 223, 0.4);
   border-radius: var(--radius);
-  background: var(--charcoal-2);
+  background: var(--charcoal);
   color: var(--bone);
 }
 .email-form input::placeholder { color: rgba(239, 230, 223, 0.5); }
@@ -555,10 +563,10 @@ blockquote.quote footer {
   width: 100%;
   padding: 0.75rem 0.9rem;
   font: inherit;
-  border: 1px solid rgba(26, 23, 20, 0.3);
+  border: 1px solid rgba(239, 230, 223, 0.3);
   border-radius: var(--radius);
-  background: #fffdfb;
-  color: var(--charcoal);
+  background: var(--charcoal);
+  color: var(--bone);
 }
 
 /* ---------- Process steps ---------- */
@@ -594,7 +602,7 @@ table.compare {
 table.compare th, table.compare td {
   text-align: left;
   padding: 0.8rem 1rem;
-  border-bottom: 1px solid rgba(26, 23, 20, 0.15);
+  border-bottom: 1px solid rgba(239, 230, 223, 0.15);
   vertical-align: top;
 }
 table.compare thead th {
