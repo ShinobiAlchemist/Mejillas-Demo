@@ -95,6 +95,20 @@ placeholders rather than faking it with an unrelated image.
   only in small eyebrow labels. Spanish diacritics (Añejo, piña, espadín, jimador) render
   throughout.
 
+## Copy provenance
+
+Where the live site had authentic substance, the mockup uses it (edited for sentence case
+and the copy rules): the brand story's **Melo Beverage NA Company + multi-generation
+agave-growing family partnership**, the resilience narrative ("withstands scorching heat and
+rocky terrain… rises stronger and sweeter"), the "cheeks = strength, endurance, quiet power"
+name explanation, the official **tasting profiles for all four expressions** (aroma, palate,
+finish), **Oaxaca** as the mezcal's origin with underground roasting, 40% ABV across the
+line, and the "bulk orders welcome" offer. The tagline "Forged by nature. Grounded in
+tradition." is itself live-site copy — the brief chose well. Deliberately NOT carried over:
+"Where Flavor Meets Heritage," the four per-product taglines ("Time transforms everything,"
+etc.), and "Inspired by the land, Defined by tradition" — all casualties of the one-tagline
+rule.
+
 ## Copy decisions (fixing live-site errors — all verified against the live site)
 
 - One tagline sitewide: **"Forged by nature. Grounded in tradition."**

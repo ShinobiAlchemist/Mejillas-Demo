@@ -132,29 +132,40 @@ a:hover { color: var(--rosegold); }
 }
 .center .foil-rule--short { margin-left: auto; margin-right: auto; }
 
-/* ---------- Textures (section backgrounds only, never behind copy blocks) ---------- */
+/* ---------- Textures (section backgrounds only, never behind copy blocks) ----------
+   Both stay at or under the 6% opacity ceiling. The noise is mapped to a contrasting
+   tone per surface (light grain on charcoal, dark grain on bone) — same-tone grain at
+   this opacity is invisible, which defeats the point. */
 .tex-stone, .tex-paper { position: relative; }
 .tex-stone::before, .tex-paper::before {
   content: "";
   position: absolute; inset: 0;
   pointer-events: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-size: 240px 240px;
 }
-.tex-stone::before { opacity: 0.055; }          /* volcanic grain on charcoal */
-.tex-paper::before { opacity: 0.04; }           /* cotton paper grain on bone */
+/* Volcanic stone on charcoal: coarse multi-octave mottle rendered as warm-light grain */
+.tex-stone::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='s'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.09' numOctaves='4' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.94 0 0 0 0 0.90 0 0 0 0 0.86 0 0 2.0 0 -0.5'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23s)'/%3E%3C/svg%3E");
+  background-size: 220px 220px;
+  opacity: 0.06;
+}
+/* Handmade cotton paper on bone: fine fibrous speckle rendered as charcoal grain */
+.tex-paper::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.35 0.28' numOctaves='4' seed='11' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.13 0 0 0 0 0.10 0 0 0 0 0.07 0 0 2.4 0 -0.7'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  opacity: 0.06;
+}
 .tex-stone > *, .tex-paper > * { position: relative; }
 
 /* Agave fiber weave divider between major sections */
 .fiber-divider {
   display: block;
-  height: 14px;
+  height: 18px;
   border: 0;
   margin: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='14' viewBox='0 0 56 14'%3E%3Cg fill='none' stroke='%23C4883A' stroke-width='1'%3E%3Cpath d='M0 7 Q7 1 14 7 T28 7 T42 7 T56 7'/%3E%3Cpath d='M0 7 Q7 13 14 7 T28 7 T42 7 T56 7' stroke='%23BE8E71'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='18' viewBox='0 0 56 18'%3E%3Cg fill='none' stroke-width='1.4' stroke-linecap='round'%3E%3Cpath d='M0 9 Q7 2 14 9 T28 9 T42 9 T56 9' stroke='%23C4883A'/%3E%3Cpath d='M0 9 Q7 16 14 9 T28 9 T42 9 T56 9' stroke='%23BE8E71'/%3E%3Cpath d='M-7 9 Q0 3.5 7 9 T21 9 T35 9 T49 9 T63 9' stroke='%238A5F44' stroke-width='0.9'/%3E%3C/g%3E%3C/svg%3E");
   background-repeat: repeat-x;
   background-position: center;
-  opacity: 0.35;
+  opacity: 0.6;
 }
 
 /* ---------- Surfaces ---------- */
