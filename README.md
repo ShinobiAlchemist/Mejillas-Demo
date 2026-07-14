@@ -124,8 +124,9 @@ rule.
   añejo, revert the naming and the aging copy together.
 - Brand story rewritten to ~110 words (≤ 150), leading with the Los Altos land and the
   growing family; the "cheeks" name explanation is exactly one sentence.
-- Trust marks "NOM ____ · Distilled at ____, Jalisco" on every product page, Land & Family,
-  and the footer — fill in the real numbers before launch.
+- Trust marks "NOM 1609 · Distilled at ____, Jalisco" on every product page, Land & Family,
+  and the footer. NOM 1609 is provisional for all expressions (the mezcal will ultimately need
+  its own mezcal NOM); the distillery name is still a placeholder.
 - All CTAs are specific verbs ("Shop Extra Añejo", "Read the process", "Find a bottle").
 
 ## ⚠️ Open items / flags
@@ -138,7 +139,7 @@ rule.
   the brief there is one site tagline, so the mockup never sets "Bésame." as copy — but it
   is visible inside the label photography. The team should decide whether it's a label-only
   mark or belongs in the brand voice.
-- Placeholders awaiting real content: prices, NOM + distillery numbers, award medals & press
+- Placeholders awaiting real content: prices, the distillery name (NOM 1609 is provisional for all expressions), award medals & press
   logos (proof slots), verified customer quotes, agave-field and family photography, retail
   locator data, press kit, shipping states, and counsel-reviewed legal copy.
 - Forms (email capture, locator, contact) are non-functional mocks.
