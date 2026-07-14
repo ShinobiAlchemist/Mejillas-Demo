@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Land & Family — Mejillas Tequila</title>
+<meta name="description" content="Los Altos de Jalisco: red clay, high altitude, and the family of growers behind every Mejillas harvest. NOM and distillery transparency.">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" fill="none" stroke="%23B76E79" stroke-width="2"/><text x="16" y="21" text-anchor="middle" font-family="Georgia" font-size="14" fill="%23B76E79">M</text></svg>'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="age-gate" id="age-gate" hidden>
+  <div class="age-gate-inner">
+    <svg class="emblem" width="56" height="56" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15.5" fill="none" stroke="#B76E79" stroke-width="1.5"/><text x="17" y="22.5" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#B76E79">M</text></svg>
+    <h2>Welcome to Mejillas</h2>
+    <p>Enter your birth year to confirm you are of legal drinking age.</p>
+    <form novalidate>
+      <label class="visually-hidden" for="birth-year">Birth year</label>
+      <input type="number" id="birth-year" name="birth-year" inputmode="numeric" placeholder="YYYY" min="1900" max="2100" required>
+      <button class="btn" type="submit">Enter</button>
+    </form>
+    <p class="age-error" role="alert" aria-live="polite"></p>
+    <p class="age-fine-print">By entering, you agree to our <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a>. Please sip responsibly.</p>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <svg class="emblem" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15.5" fill="none" stroke="#B76E79" stroke-width="1.5"/><text x="17" y="22.5" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#B76E79">M</text></svg>
+      <span class="brand-name">Mejillas</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <ul>
+        <li class="has-menu">
+          <a href="tequilas.html">Tequilas</a>
+          <button class="submenu-toggle" aria-expanded="false" aria-label="Open Tequilas menu"><span aria-hidden="true">&#9662;</span></button>
+          <ul class="submenu">
+            <li><a href="blanco.html">Blanco</a></li>
+            <li><a href="reposado.html">Reposado</a></li>
+            <li><a href="anejo.html">A&ntilde;ejo</a></li>
+            <li><a href="mezcal.html">Mezcal</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a href="our-story.html">Our Story</a>
+          <button class="submenu-toggle" aria-expanded="false" aria-label="Open Our Story menu"><span aria-hidden="true">&#9662;</span></button>
+          <ul class="submenu">
+            <li><a href="land-and-family.html" aria-current="page">The Land &amp; Family</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="tequila-vs-mezcal.html">Tequila vs Mezcal</a></li>
+          </ul>
+        </li>
+        <li><a href="cocktails.html">Cocktails</a></li>
+        <li><a href="where-to-buy.html">Where to Buy</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="foil-rule" aria-hidden="true"></div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero on-dark tex-stone">
+    <div class="container">
+      <span class="eyebrow">Our story &middot; Chapter one</span>
+      <h1>The land &amp; the family</h1>
+      <div class="foil-rule foil-rule--short" aria-hidden="true"></div>
+      <p class="lede">Great tequila is grown before it is made. Ours is grown two thousand meters up, by people whose name is on the field.</p>
+    </div>
+  </section>
+
+  <section class="section tex-paper on-light">
+    <div class="container">
+      <div class="grid grid--2">
+        <div class="prose">
+          <span class="eyebrow">The land</span>
+          <h2>Red clay, thin air, slow sugar</h2>
+          <p>Los Altos de Jalisco sits high on Mexico's central plateau. The iron-rich soil drains fast, the sun is close, and the nights turn cold &mdash; conditions that force blue agave to grow slowly and store more sugar in its heart.</p>
+          <p>That stress is the flavor. Highland agave gives Mejillas its ripe sweetness and bright fruit, where valley agave leans earthy and herbal. We would not trade the wait for anything.</p>
+        </div>
+        <figure class="ph" role="img" aria-label="Photo placeholder: rows of blue agave on red Los Altos soil under a high sun">
+          <span class="ph__note">Photo: agave rows on red clay, Los Altos</span>
+        </figure>
+      </div>
+      <div class="grid grid--2 mt-2" id="family">
+        <figure class="ph" role="img" aria-label="Photo placeholder: three generations of the growing family with a jimador's coa">
+          <span class="ph__note">Photo: three generations, one coa</span>
+        </figure>
+        <div class="prose">
+          <span class="eyebrow">The family</span>
+          <h2>Three generations in the rows</h2>
+          <p>Every pi&ntilde;a in a Mejillas batch comes from a single family of growers we have worked with from the start. Grandfather planted, father grafted the knowledge, and the third generation now decides &mdash; plant by plant &mdash; when an agave has earned its harvest.</p>
+          <p>Seven years is a long time to wait for one ingredient. It is also the only way we know to make this tequila.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="fiber-divider" aria-hidden="true"></div>
+
+  <section class="section on-dark tex-stone">
+    <div class="container">
+      <span class="eyebrow">Transparency</span>
+      <h2>Who makes it, exactly</h2>
+      <div class="foil-rule foil-rule--short" aria-hidden="true"></div>
+      <p>Every legitimate tequila carries a NOM &mdash; the number that identifies the distillery where it was actually made. Ours is printed on every label and on every product page of this site, because you should never have to guess.</p>
+      <p class="mt-1"><span class="trust-mark"><span class="tm-dot" aria-hidden="true"></span>NOM ____ &middot; Distilled at ____, Jalisco</span></p>
+      <p class="mt-1"><span class="trust-mark"><span class="tm-dot" aria-hidden="true"></span>Mezcal NOM ____ &middot; Distilled at ____, M&eacute;xico</span></p>
+      <p class="mt-2">See what happens inside those walls: <a href="process.html">read the process</a>.</p>
+    </div>
+  </section>
+
+</main>
+
+<div class="fiber-divider" aria-hidden="true"></div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <svg class="emblem" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15.5" fill="none" stroke="#B76E79" stroke-width="1.5"/><text x="17" y="22.5" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#B76E79">M</text></svg>
+          <span class="brand-name">Mejillas</span>
+        </a>
+        <p class="small mt-1">Forged by nature. Grounded in tradition.</p>
+        <p class="small">Instagram &middot; Facebook &middot; X: <strong>@mejillastequila</strong><br><span style="opacity:0.6">(confirm live handles &mdash; see README)</span></p>
+      </div>
+      <nav aria-label="Footer: Tequilas">
+        <h4>Tequilas</h4>
+        <ul>
+          <li><a href="tequilas.html">All expressions</a></li>
+          <li><a href="blanco.html">Blanco</a></li>
+          <li><a href="reposado.html">Reposado</a></li>
+          <li><a href="anejo.html">A&ntilde;ejo</a></li>
+          <li><a href="mezcal.html">Mezcal</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Footer: Explore">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="our-story.html">Our Story</a></li>
+          <li><a href="land-and-family.html">The Land &amp; Family</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="tequila-vs-mezcal.html">Tequila vs Mezcal</a></li>
+          <li><a href="cocktails.html">Cocktails &amp; Pairings</a></li>
+          <li><a href="where-to-buy.html">Where to Buy</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Footer: Fine print">
+        <h4>Fine print</h4>
+        <ul>
+          <li><a href="contact.html">Contact / Press</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="shipping-refunds.html">Shipping &amp; Refunds</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-legal">
+      <p>NOM ____ &middot; Distilled at ____, Jalisco, M&eacute;xico.</p>
+      <p>Please enjoy Mejillas responsibly. This site is intended for adults of legal drinking age only.</p>
+      <p>&copy; <span class="js-year">2026</span> Mejillas Tequila. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
