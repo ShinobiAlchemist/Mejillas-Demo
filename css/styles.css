@@ -6,8 +6,8 @@
 /* ---------- Tokens ---------- */
 :root {
   --charcoal: #1A1714;   /* primary ground */
-  --rosegold: #B76E79;   /* signature accent — only CTA color */
-  --rosewood: #7D3B42;   /* hover/active, Añejo tier */
+  --rosegold: #BE8E71;   /* signature accent — only CTA color. Calibrated to the label foil (sampled #BF9274/#A87858 from the logo + lineup labels); the live site's pink #B76E79 conflicted with the bottles. */
+  --rosewood: #8A5F44;   /* hover/active, Extra Añejo tier — dark companion of the label copper */
   --bone:     #EFE6DF;   /* light surfaces, type on dark */
   --agave:    #6C8578;   /* Blanco tier, subtle accents */
   --amber:    #C4883A;   /* Reposado tier + award badges ONLY */
@@ -118,13 +118,13 @@ a:hover { color: var(--rosegold); }
   border: 0;
   margin: 0;
   background: linear-gradient(90deg,
-    rgba(183, 110, 121, 0) 0%,
-    #a2606b 18%,
-    #d9a3ab 42%,
+    rgba(190, 142, 113, 0) 0%,
+    #9C6B4B 18%,
+    #DCB491 42%,
     var(--rosegold) 50%,
-    #d9a3ab 58%,
-    #a2606b 82%,
-    rgba(183, 110, 121, 0) 100%);
+    #DCB491 58%,
+    #9C6B4B 82%,
+    rgba(190, 142, 113, 0) 100%);
 }
 .foil-rule--short {
   width: min(9rem, 40%);
@@ -151,7 +151,7 @@ a:hover { color: var(--rosegold); }
   height: 14px;
   border: 0;
   margin: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='14' viewBox='0 0 56 14'%3E%3Cg fill='none' stroke='%23C4883A' stroke-width='1'%3E%3Cpath d='M0 7 Q7 1 14 7 T28 7 T42 7 T56 7'/%3E%3Cpath d='M0 7 Q7 13 14 7 T28 7 T42 7 T56 7' stroke='%23B76E79'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='14' viewBox='0 0 56 14'%3E%3Cg fill='none' stroke='%23C4883A' stroke-width='1'%3E%3Cpath d='M0 7 Q7 1 14 7 T28 7 T42 7 T56 7'/%3E%3Cpath d='M0 7 Q7 13 14 7 T28 7 T42 7 T56 7' stroke='%23BE8E71'/%3E%3C/g%3E%3C/svg%3E");
   background-repeat: repeat-x;
   background-position: center;
   opacity: 0.35;
@@ -282,7 +282,7 @@ a:hover { color: var(--rosegold); }
   left: 0;
   min-width: 13rem;
   background: var(--charcoal-2);
-  border: 1px solid rgba(183, 110, 121, 0.35);
+  border: 1px solid rgba(190, 142, 113, 0.35);
   border-radius: var(--radius);
   padding: 0.4rem 0;
   display: none;
@@ -341,6 +341,15 @@ a:hover { color: var(--rosegold); }
 .page-hero { padding: clamp(3rem, 7vw, 5rem) 0 clamp(2rem, 5vw, 3.5rem); }
 .page-hero .lede { font-size: clamp(1.02rem, 1.8vw, 1.2rem); }
 
+/* ---------- Brand mark (real asset) ---------- */
+img.emblem { width: 34px; height: auto; display: block; }
+.age-gate-inner img.emblem { width: 64px; }
+
+/* ---------- Photo figures (real assets) ---------- */
+.photo-figure { margin: 0; }
+.photo-figure img { width: 100%; height: auto; border-radius: var(--radius); display: block; }
+.photo-figure figcaption { font-size: 0.75rem; opacity: 0.55; margin-top: 0.5rem; }
+
 /* ---------- Bottle placeholder figures ---------- */
 .bottle-figure {
   margin: 0;
@@ -350,6 +359,7 @@ a:hover { color: var(--rosegold); }
   gap: 0.6rem;
 }
 .bottle-figure svg { display: block; width: min(100%, 15rem); }
+.bottle-figure img { display: block; width: min(100%, 14rem); height: auto; border-radius: var(--radius); }
 .bottle-figure figcaption, .ph__note {
   font-size: 0.75rem;
   letter-spacing: 0.04em;
@@ -361,9 +371,9 @@ a:hover { color: var(--rosegold); }
 .ph {
   margin: 0;
   min-height: 14rem;
-  border: 1px dashed rgba(183, 110, 121, 0.5);
+  border: 1px dashed rgba(190, 142, 113, 0.5);
   border-radius: var(--radius);
-  background: rgba(183, 110, 121, 0.06);
+  background: rgba(190, 142, 113, 0.06);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -423,6 +433,7 @@ a:hover { color: var(--rosegold); }
 /* Product card specifics */
 .product-card .bottle-figure { padding: 1.25rem 0 0.5rem; }
 .product-card .bottle-figure svg { width: 5.5rem; }
+.product-card .bottle-figure img { width: auto; height: 13rem; }
 .price { font-weight: 600; font-size: 1.05rem; }
 .price small { font-weight: 400; opacity: 0.6; font-size: 0.75rem; }
 
@@ -494,7 +505,7 @@ blockquote.quote footer {
   gap: 0.6rem;
   font-size: 0.82rem;
   letter-spacing: 0.06em;
-  border: 1px solid rgba(183, 110, 121, 0.55);
+  border: 1px solid rgba(190, 142, 113, 0.55);
   border-radius: var(--radius);
   padding: 0.55rem 0.95rem;
   color: inherit;
@@ -553,7 +564,7 @@ blockquote.quote footer {
   font-family: var(--font-display);
   font-size: 1.5rem;
   color: var(--rosegold);
-  border: 1px solid rgba(183, 110, 121, 0.5);
+  border: 1px solid rgba(190, 142, 113, 0.5);
   border-radius: 50%;
   width: 3.2rem; height: 3.2rem;
   display: flex; align-items: center; justify-content: center;
