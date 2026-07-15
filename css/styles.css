@@ -1,17 +1,17 @@
 /* ==========================================================================
-   Mejillas Tequila — Site Refresh Mockup
+   Mejillas Tequila: Site Refresh Mockup
    Palette: "Rose Gold & Volcanic" (calibrated against live site)
    ========================================================================== */
 
 /* ---------- Tokens ---------- */
 :root {
-  --charcoal: #161310;   /* primary ground — deepened for mood, still warmed near-black, never pure #000 */
-  --rosegold: #BE8E71;   /* signature accent — only CTA color. Calibrated to the label foil (sampled #BF9274/#A87858 from the logo + lineup labels); the live site's pink #B76E79 conflicted with the bottles. */
-  --rosewood: #8A5F44;   /* hover/active, Extra Añejo tier — dark companion of the label copper */
+  --charcoal: #161310;   /* primary ground, deepened for mood; still warmed near-black, never pure #000 */
+  --rosegold: #BE8E71;   /* signature accent, the only CTA color. Calibrated to the label foil (sampled #BF9274/#A87858 from the logo + lineup labels); the live site's pink #B76E79 conflicted with the bottles. */
+  --rosewood: #8A5F44;   /* hover/active, Extra Añejo tier; dark companion of the label copper */
   --bone:     #EFE6DF;   /* light surfaces, type on dark */
   --agave:    #6C8578;   /* Blanco tier, subtle accents */
   --amber:    #C4883A;   /* Reposado tier + award badges ONLY */
-  --smoke:    #6E675F;   /* Mezcal tier — smoke gray derived from charcoal */
+  --smoke:    #6E675F;   /* Mezcal tier; smoke gray derived from charcoal */
 
   --charcoal-2: #211C17; /* raised dark surface */
   --bone-2:     #E6DAD1; /* recessed light surface */
@@ -134,7 +134,7 @@ a:hover { color: var(--bone); }
 
 /* ---------- Textures (section backgrounds only, never behind copy blocks) ----------
    Both stay at or under the 6% opacity ceiling. The noise is mapped to a contrasting
-   tone per surface (light grain on charcoal, dark grain on bone) — same-tone grain at
+   tone per surface (light grain on charcoal, dark grain on bone), because same-tone grain at
    this opacity is invisible, which defeats the point. */
 .tex-stone, .tex-paper { position: relative; }
 .tex-stone::before, .tex-paper::before {

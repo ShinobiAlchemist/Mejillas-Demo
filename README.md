@@ -1,8 +1,8 @@
-# Mejillas Tequila — Site Refresh Mockup
+# Mejillas Tequila: Site Refresh Mockup
 
 A complete multi-page static mockup (plain HTML + CSS, no build tools) of a refreshed
 mejillastequila.com. This is a **design mockup** for review and hand-off to a Squarespace
-designer — not production code.
+designer, not production code.
 
 ## How to view
 
@@ -12,12 +12,12 @@ fall back to system serif/sans.)
 
 ## What it delivers (per the brief)
 
-1. **Architecture** — hub-and-spoke sitemap (jimbeam.com model): products in persistent nav,
+1. **Architecture.** Hub-and-spoke sitemap (jimbeam.com model): products in persistent nav,
    every page reachable in two clicks.
-2. **Flow** — conversion-first homepage (mijenta-tequila.com model): shoppable hero, product
-   grid, story band, pillars, proof, cocktails teaser, buy band, email capture, footer — in
+2. **Flow.** Conversion-first homepage (mijenta-tequila.com model): shoppable hero, product
+   grid, story band, pillars, proof, cocktails teaser, buy band, email capture, footer, in
    that exact order.
-3. **Brand communication** — premium craft positioning: Los Altos sourcing, resilience
+3. **Brand communication.** Premium craft positioning: Los Altos sourcing, resilience
    narrative, NOM/distillery transparency trust marks.
 
 ## Sitemap
@@ -38,7 +38,7 @@ Shared on every page: persistent nav (Tequilas ▾ | Our Story ▾ | Cocktails |
 Contact), age-gate overlay (birth-year entry, `sessionStorage`, session-scoped only), and a
 fully wired footer.
 
-## Step 0 — Asset calibration (COMPLETE)
+## Step 0, Asset calibration (COMPLETE)
 
 Assets were pulled from the live site (Squarespace CDN) into `/assets` and the palette was
 checked against the actual bottle labels, per the brief's rule that **the bottles are the
@@ -46,7 +46,7 @@ fixed point**. One change was required:
 
 > **The signature accent was recalibrated from pink rose gold `#B76E79` to label copper
 > `#BE8E71`.** The brand's logo lockup and all four bottle labels print the agave mark and
-> wordmark in a warm copper foil — sampled at `#BF9274` (light) / `#A87858` (dark) from the
+> wordmark in a warm copper foil, sampled at `#BF9274` (light) / `#A87858` (dark) from the
 > logo asset and the lineup labels. The live site's UI pink `#B76E79` visibly clashes with
 > that copper when a real bottle photo sits next to a CTA. Its dark companion `--rosewood`
 > moved accordingly (`#7D3B42` wine → `#8A5F44` bronze), and the foil-rule gradient was
@@ -60,17 +60,17 @@ label counterpart.
 
 | File | What it is / where it's used |
 |---|---|
-| `mark-agave.png` | Copper agave mark, background keyed out — header, footer, age gate |
-| `logo-lockup.webp` | Full logo (agave + MEJILLAS + "Bésame.") — reference, unused in pages |
-| `bottles-lineup.webp` | All four bottles — Tequilas hub hero, Where to Buy |
-| `bottle-{blanco,reposado,extra-anejo,mezcal}.webp` | Single-bottle crops from the lineup — heroes + product cards |
-| `promo-{blanco,reposado,mezcal}.webp` | Event/promo shots — product pages |
-| `founders-edition.webp` | Extra Añejo Founder's Edition + cocktail — Extra Añejo page, Cocktails hero |
-| `mezcal-pour.webp` | Mezcal being poured — Mezcal page, Tequila vs Mezcal |
-| `barrels-branded.webp` | MEJILLAS 2026 branded barrels — Our Story, Process |
-| `barrel-warehouse.webp` | Aging warehouse aisle — Process, Land & Family |
-| `event-bar-team.webp` | Team pouring at an event — Contact/Press |
-| `event-tasting-bar.webp` | Event bar photo — spare, unused |
+| `mark-agave.png` | Copper agave mark, background keyed out. Used in header, footer, age gate |
+| `logo-lockup.webp` | Full logo (agave + MEJILLAS + "Bésame."). Reference only, unused in pages |
+| `bottles-lineup.webp` | All four bottles. Used on Tequilas hub hero and Where to Buy |
+| `bottle-{blanco,reposado,extra-anejo,mezcal}.webp` | Single-bottle crops from the lineup. Used in heroes and product cards |
+| `promo-{blanco,reposado,mezcal}.webp` | Event/promo shots. Used on product pages |
+| `founders-edition.webp` | Extra Añejo Founder's Edition with cocktail. Used on the Extra Añejo page and Cocktails hero |
+| `mezcal-pour.webp` | Mezcal being poured. Used on the Mezcal page and Tequila vs Mezcal |
+| `barrels-branded.webp` | MEJILLAS 2026 branded barrels. Used on Our Story and Process |
+| `barrel-warehouse.webp` | Aging warehouse aisle. Used on Process and Land & Family |
+| `event-bar-team.webp` | Team pouring at an event. Used on Contact/Press |
+| `event-tasting-bar.webp` | Event bar photo. Spare, unused |
 
 Files are WebP (as served by the Squarespace CDN). No photo of agave fields or the growing
 family exists on the live site, so those two slots on Land & Family remain styled
@@ -83,12 +83,12 @@ placeholders rather than faking it with an unrelated image.
   is its hover state. No pure #000/#FFF anywhere. Tier coding: Blanco = sage `--agave`,
   Reposado = `--amber` (badges + tier only, never buttons), Extra Añejo = `--rosewood`,
   Mezcal = `--smoke` (#6E675F, derived from charcoal).
-- **Signature element (the only one):** the thin copper **foil rule** — anchors the hero and
+- **Signature element (the only one):** the thin copper **foil rule**. It anchors the hero and
   recurs as the section divider, echoing the label's foil printing.
 - **Textures:** SVG-noise paper grain on bone sections, volcanic grain on charcoal sections
   (both ≤ 6% opacity, backgrounds only), plus an agave-fiber weave divider used sparingly.
 - **Typography:** **Fraunces** for display, replacing the live site's Playfair Display.
-  Rationale: it keeps the high-contrast serif elegance but has genuine character — optical
+  Rationale: it keeps the high-contrast serif elegance but has genuine character: optical
   sizing and slightly "wonky" letterforms that read as *crafted* rather than templated, which
   matches the small-batch positioning; Newsreader was the runner-up but reads more editorial
   than label-like. Body/utility is **Archivo**. Sentence case throughout; ALL-CAPS survives
@@ -104,17 +104,17 @@ rocky terrain… rises stronger and sweeter"), the "cheeks = strength, endurance
 name explanation, the official **tasting profiles for all four expressions** (aroma, palate,
 finish), **Oaxaca** as the mezcal's origin with underground roasting, 40% ABV across the
 line, and the "bulk orders welcome" offer. The tagline "Forged by nature. Grounded in
-tradition." is itself live-site copy — the brief chose well. Deliberately NOT carried over:
+tradition." is itself live-site copy; the brief chose well. Deliberately NOT carried over:
 "Where Flavor Meets Heritage," the four per-product taglines ("Time transforms everything,"
-etc.), and "Inspired by the land, Defined by tradition" — all casualties of the one-tagline
+etc.), and "Inspired by the land, Defined by tradition". All are casualties of the one-tagline
 rule.
 
-## Copy decisions (fixing live-site errors — all verified against the live site)
+## Copy decisions (fixing live-site errors, all verified against the live site)
 
 - One tagline sitewide: **"Forged by nature. Grounded in tradition."**
-- "pairing" spelled correctly — the live site's `/signature-cocktail-paring` URL and page
+- "pairing" spelled correctly; the live site's `/signature-cocktail-paring` URL and page
   title carry the "paring" typo (confirmed).
-- The mezcal page lives at **`mezcal.html`** — the live site's `/meczel` URL typo is
+- The mezcal page lives at **`mezcal.html`**, correcting the live site's `/meczel` URL typo, which is
   confirmed real (page title "Meczel"). Mezcal is never called tequila; its page opens with
   the one-line distinction.
 - **The flagship is "Extra Añejo", not "Añejo."** The live site's nav and URL say "Anejo,"
@@ -136,7 +136,7 @@ rule.
   domain). The mockup standardizes on `@mejillastequila`; either rename the IG/FB accounts
   or update the footer, but pick one spelling everywhere.
 - **"Bésame."** appears as a script tagline inside the logo lockup and on every label. Per
-  the brief there is one site tagline, so the mockup never sets "Bésame." as copy — but it
+  the brief there is one site tagline, so the mockup never sets "Bésame." as copy, but it
   is visible inside the label photography. The team should decide whether it's a label-only
   mark or belongs in the brand voice.
 - Placeholders awaiting real content: prices, the distillery name (NOM 1609 is provisional for all expressions), award medals & press
@@ -148,5 +148,5 @@ rule.
 
 Responsive to 375px · visible `:focus-visible` states · `prefers-reduced-motion` respected ·
 semantic HTML with skip links and labeled nav regions · descriptive alt text on every real
-image and `role="img"` + `aria-label` on remaining placeholders · no lorem ipsum — all copy
+image and `role="img"` + `aria-label` on remaining placeholders · no lorem ipsum; all copy
 is real draft copy.

@@ -1,4 +1,4 @@
-/* Mejillas Tequila mockup — age gate + navigation. No dependencies. */
+/* Mejillas Tequila mockup: age gate + navigation. No dependencies. */
 (function () {
   "use strict";
 
